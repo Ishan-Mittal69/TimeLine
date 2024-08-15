@@ -143,7 +143,7 @@ export default function Timeline() {
             size: 'm',
             autoSize: true,
             textAlign: 'start',
-            color: 'black',
+            color: 'grey',
           },
         });
 
