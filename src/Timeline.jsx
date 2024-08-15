@@ -143,7 +143,7 @@ export default function Timeline() {
             size: 'm',
             autoSize: true,
             textAlign: 'start',
-            color: 'black',
+            color: 'grey',
           },
         });
 
@@ -151,14 +151,13 @@ export default function Timeline() {
           <React.Fragment key={i}>
             <span>{i+1}</span>
             <EditableContentBox
-              index={i} // Use `i` as the index
+              index={i} 
               style={{ padding: 4, width: '40%', height: '30px', resize: 'none', borderRadius: 2 }}
               placeholder={'Time period'}
               onChange={(index, newText) => handleContentBoxTimeChange(index, newText)}
             />
             <EditableContentBox
-              index={i} // Use `i` as the index
-              // style={{ padding: 4, width: '40%', height: '30px', resize: 'none', borderRadius: 2 }}
+              index={i} 
               placeholder={'Content'}
               onChange={(index, newText) => handleContentBoxContentChange(index, newText)}
             />
